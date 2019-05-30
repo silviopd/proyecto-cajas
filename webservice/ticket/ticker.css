@@ -1,0 +1,61 @@
+body{
+	  width: 309px;
+    border: 1px solid red;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.centrar{
+	padding: 0px 20px 10px 20px;
+	text-align: center;
+}
+
+.izquierda{
+	text-align: left;
+}
+
+.tabla{
+	width: 100%;
+	/* border: 1px solid red; */
+}
+
+h1{
+	margin-top: 0;
+}
+
+.subtitulo{
+	font-weight: normal;
+}
+
+.lineas{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.datos{
+	margin-top: 0;
+	margin-bottom: 5px;
+	font-weight: normal;
+}
+
+.titulo{
+	margin-top: 0px;
+}
+
+.pagar{
+	font-weight: bold;
+}
+
+.footer{
+	margin-bottom: 0px;
+}
+
+.tabla-contenido{
+	font-size: 13px;
+}
+
+@media print {
+	.oculto-impresion, .oculto-impresion *{
+		display: none !important;
+	}
+}

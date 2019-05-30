@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ecomphisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- DataTables -->
+    <link href="../plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="../plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <!-- Responsive datatable examples -->
+    <link href="../plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <!-- Multi Item Selection examples -->
+    <link href="../plugins/datatables/select.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <!-- Sweet Alert css -->
+    <link href="../plugins/sweet-alert/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    <!-- Plugins css -->
+    <link href="../plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/modernizr.min.js"></script>
+    <!--css modal-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="pre-loader">
+        <div class="sk-fading-circle">
+            <div class="sk-circle1 sk-circle"></div>
+            <div class="sk-circle2 sk-circle"></div>
+            <div class="sk-circle3 sk-circle"></div>
+            <div class="sk-circle4 sk-circle"></div>
+            <div class="sk-circle5 sk-circle"></div>
+            <div class="sk-circle6 sk-circle"></div>
+            <div class="sk-circle7 sk-circle"></div>
+            <div class="sk-circle8 sk-circle"></div>
+            <div class="sk-circle9 sk-circle"></div>
+            <div class="sk-circle10 sk-circle"></div>
+            <div class="sk-circle11 sk-circle"></div>
+            <div class="sk-circle12 sk-circle"></div>
+        </div>
+    </div>
+    <!-- Navigation Bar-->
+    <header id="topnav">
+        <div class="topbar-main">
+            <div class="container-fluid">
+                <!-- Logo container-->
+                <div class="logo">
+                    <a href="index.html" class="logo">
+                        <span class="logo-small"><i class="mdi mdi-radar"></i></span>
+                        <span class="logo-large"><i class="mdi mdi-radar"></i> ECOMPHISA</span>
+                    </a>
+                </div>
+                <!-- End Logo container-->
+                <div class="menu-extras topbar-custom">
+                    <ul class="list-unstyled topbar-right-menu float-right mb-0">
+                        <li class="menu-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle nav-link">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+                        <li class="dropdown notification-list">
+                            <a class="nav-link dropdown-toggle waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle"> <span class="ml-1 pro-user-name" id="hud_nombre_usuario">Usuario<i class="mdi mdi-chevron-down"></i> </span>
+                                </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item" id="btnCuenta">
+                                        <i class="fi-head"></i> <span>Mi cuenta</span>
+                                    </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item" id="btnSalir">
+                                        <i class="fi-power"></i> <span>Salir</span>
+                                    </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end menu-extras -->
+                <div class="clearfix"></div>
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end topbar-main -->
+        <div class="navbar-custom">
+            <div class="container-fluid">
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+                        <li class="has-submenu">
+                            <a href="index.html"><i class="icon-speedometer"></i>Dashboard</a>
+                        </li>
+                        <li class="has-submenu" id="menu1">
+                            <a href="#"><i class=" mdi mdi-account-card-details"></i>Asistencia</a>
+                            <ul class="submenu">
+                                <li><a href="ingreso-puerta4.html">Ingreso</a></li>
+                                <li><a href="personal.html">Cliente</a></li>
+                                <li><a href="tipo-personal.html">Tipo Personal</a></li>
+                                <li><a href="tipo-carga.html">Tipo Carga</a></li>
+                                <li><a href="reporte-asistencia.html">Reporte</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu" id="menu2">
+                            <a href="#"><i class=" mdi mdi-car"></i>Salida Puerta 4</a>
+                            <ul class="submenu">
+                                <li><a href="tipo-carga.html">Tipo Carga</a></li>
+                                <li><a href="tipo-categoria.html">Tipo Categoria</a></li>
+                                <li><a href="salida-puerta4.html">Salida</a></li>
+                                <li><a href="reporte-salida-puerta4.html">Reporte</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu" id="menu3">
+                            <a href="#"><i class="mdi mdi-dropbox"></i>Almacen Cajas</a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="almacen-registro.html">Registros</a></li>
+                                        <li><a href="almacen-cliente.html">Cliente</a></li>
+                                        <li><a href="almacen-caja.html">Cajas</a></li>
+                                        <li><a href="ubicacion.html">Ubicacion</a></li>
+                                        <li><a href="reporte-registro.html">Reporte Registros</a></li>
+                                        <li><a href="reporte-alquiler.html">Reporte Alquiler</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu" id="menu4">
+                            <a href="#"><i class="mdi mdi-fish"></i>Area de congelado</a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="producto-congelado.html">Productos</a></li>
+                                        <li><a href="congelado-cliente.html">Cliente</a></li>
+                                        <li><a href="congelado-registro.html">Registro</a></li>
+                                        <li><a href="reporte-congelado.html">Reporte</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu" id="menu5">
+                            <a href="#"><i class="mdi mdi-store"></i>Almacen General</a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="producto-almacen-general.html">Productos</a></li>
+                                        <li><a href="area.html">Area</a></li>
+                                        <li><a href="almacen-general-registro.html">Registro</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu" id="menu6">
+                            <a href="#"><i class="mdi mdi-clipboard-flow"></i>Alquiler Balanza</a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="area-alquiler-balanza.html">Area</a></li>
+                                        <li><a href="producto-alquiler-balanza.html">Balanza</a></li>
+                                        <li><a href="alquiler-balanza-cliente.html">Cliente</a></li>
+                                        <li><a href="alquiler-balanza-registro.html">Registro</a></li>
+                                        <li><a href="reporte-alquiler-balanza.html">Reporte</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu" id="menu7">
+                            <a href="#"><i class="mdi mdi-clipboard-flow"></i>Usuarios</a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="colaborador.html">Colaborador</a></li>
+                                        <li><a href="usuario.html">Usuario</a></li>
+                                        <li><a href="usuario-area.html">Usuario-Modulo</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- End navigation menu -->
+                </div>
+                <!-- end #navigation -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end navbar-custom -->
+    </header>
+    <!-- End Navigation Bar-->
+    <div class="wrapper">
+        <div class="container-fluid">
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <div class="btn-group pull-right">
+                            <ol class="breadcrumb hide-phone p-0 m-0">
+                                <li class="breadcrumb-item"><a href="#">Almaceen</a></li>
+                                <li class="breadcrumb-item"><a href="#">Cliente</a></li>
+                            </ol>
+                        </div>
+                        <h4 class="page-title">REPORTE ALQUILER BALANZA</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card-box">
+                        <!-- <div class="row">
+                            <div class="form-group">
+                                <div class=" col-sm-12">
+                                    <label>INICIO</label>
+                                    <div>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="datepicker-autoclose">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <label>FIN</label>
+                                    <div>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="dd/mm/yyyy" id="datepicker-autoclose2">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <!-- <div class="btn-group pull-left" style="margin-right: 50px;    margin-bottom: 10px;">
+                                    <button type="button" class="btn w-sm btn-rounded btn-success waves-effect waves-light" id="btnfiltro">FILTRAR</button>
+                                </div> -->
+                                <div class="btn-group pull-left" style="margin-bottom: 10px;">
+                                    <button type="button" class="btn w-sm btn-rounded btn-success waves-effect waves-light" id="btnfiltro_descargas">Descargar</button>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-7">
+                                <div class="btn-group pull-right">
+                                    <button type="button" class="btn w-sm btn-rounded btn-success waves-effect waves-light" id="btnfiltro_hoy">HOY</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end page title end breadcrumb -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-box table-responsive">
+                        <div id="listado">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+            <!-- end wrapper -->
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="https://www.overdevs.com" target="_BLANK">www.overdevs.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/waves.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <!-- Modal-Effect -->
+    <script src="../plugins/custombox/js/custombox.min.js"></script>
+    <script src="../plugins/custombox/js/legacy.min.js"></script>
+    <!-- plugin js -->
+    <script src="../plugins/moment/moment.js"></script>
+    <script src="../plugins/moment/es.js"></script>
+    <script src="../plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <!-- App js -->
+    <script src="assets/js/jquery.core.js"></script>
+    <script src="assets/js/jquery.app.js"></script>
+    <!-- Required datatable js -->
+    <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../plugins/datatables/dataTables.bootstrap4.min.js"></script>
+    <!-- Responsive examples -->
+    <script src="../plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
+    <!-- Sweet Alert Js  -->
+    <script src="../plugins/sweet-alert/sweetalert2.min.js"></script>
+    <script src="assets/pages/jquery.sweet-alert.init.js"></script>
+    <!-- Init js -->
+    <script src="assets/pages/jquery.form-pickers.init.js"></script>
+    <script src="../plugins/Cookie/cookie.js"></script>
+    <script src="js/configuracion.js"></script>
+    <script src="js/reporte-alquiler-balanza.js"></script>
+</body>
+
+</html>

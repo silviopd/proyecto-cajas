@@ -1,0 +1,23 @@
+ANTES DE LA ETIQUETA <html>
+
+<?php
+
+require_once './plugins/dompdf/autoload.inc.php';
+$html = '
+
+
+DESPUES DE LA ETIQUETA </html> 
+
+';
+$pdf = new \Dompdf\Dompdf();
+
+$pdf->set_paper("A4", "landscape");
+$pdf->load_html(utf8_decode($html));
+$pdf->render();
+
+$canvas = $pdf->get_canvas();
+$canvas->page_text(330, 570, "Página {PAGE_NUM} de {PAGE_COUNT}      ".date('d/m/Y')."     ".date('h:i')." ".date('A'), null, 10, array(0, 0, 0));
+
+$pdf->stream('Reporte-Almacen-Registro.pdf', array("Attachment" => false));
+
+exit(0);

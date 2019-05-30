@@ -1,0 +1,54 @@
+.footer .page-number:after { 
+    content: counter(page); 
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+}
+
+.izquierda{
+    text-align: left;
+}
+
+.izquierda2{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.tabla{
+    width: 50%;
+    margin: 30px auto;
+}
+
+.derecha{
+    text-align: right;
+}
+
+.centrar-tabla{    
+    text-align: center;
+}
+
+.tabla-contenido{
+    font-size: 13px;
+}
+/*
+.footer{
+    position: absolute;
+    margin-bottom: 0%;
+    background: rgb(240,240,240,.9);
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 30px;
+    padding: 3px 25px;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 0;
+    margin-left: 0;
+}*/
